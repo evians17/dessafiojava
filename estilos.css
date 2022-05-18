@@ -1,0 +1,24 @@
+.calculos {
+    background-color: rgba(255, 225, 127, 0.479);
+    color: black;
+    font-size: 20px;
+    margin: 5px;
+    border: 2px outset rgb(255, 153, 0);
+    padding: 15px 40px;
+    text-align: center;
+    font-weight: 700;
+  }
+  h1 {
+    text-align: center;
+    color: rgb(241, 55, 55);
+  }
+  .centrar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  h2 {
+    text-align: center;
+    color: rgb(241, 55, 55);
+  }

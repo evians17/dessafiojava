@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>SUMATORIA  PARA HALLAR EL VALOR DE PÍ</h1>
+    </header>
+  <section class="res">
+  <br><br><br>
+  <input type="number" id="numeroA">
+    <button id="btn">Calcular</button>
+  <br><br><br>
+    <h2>Resultado:</p>
+  <div id="resultado"></div>
+  <script> 
+        var b=document.getElementById('btn');
+    b.addEventListener('click',PPI);
+    function PPI() 
+        {
+            var limite = 100000; // cantidad máxima de n enteros positivos.
+            var suma = 0; // guarda la suma de los enteros positivos.
+            var pi = 0; // guarda el valor de final de Pi.
+            for ( var i=1; i<=limite; i++ )
+            {
+                suma += 1 / ( i**2 );
+                pi = Math.sqrt(suma * 6);
+            }
+            document.getElementById("resultado").innerHTML = limite+suma+"="+pi
+        }
+  </script>
+</section>
+</body>
+</html>
